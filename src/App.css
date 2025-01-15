@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&display=swap');
+
+:root {
+    --red: #007bff; /* Updated button color to blue */
+    --gray: #2e2e2e;
+    --background: #A6CDC6; /* Dark gray for background */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background); /* Set the background color */
+    color: white; /* Adjust text color for contrast */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 72px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+button {
+    all: unset;
+    padding: 7px 17px;
+    background: var(--red); /* Blue button color */
+    height: 32px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer; /* Indicate button is clickable */
+    border-radius: 4px; /* Rounded button for better aesthetics */
+    transition: background 0.3s; /* Smooth hover effect */
+}
+
+button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 72px);
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.hero h1 {
+    font-weight: 800;
+    line-height: 102px;
+    font-size: 108px;
+}
+
+.hero p {
+    font-weight: 600;
+    color: var(--gray);
+    max-width: 400px;
+}
+
+.hero-btn {
+    display: flex;
+    gap: 40px;
+}
+
+.hero-btn button {
+    font-size: 24px;
+}
+
+.secondary-btn {
+    background: transparent;
+    color: var(--gray);
+    border: 1px solid gray;
+}
+
+.secondary-btn:hover {
+    color: var(--red); /* Change color on hover */
+    border-color: var(--red);
+}
+
+.shopping p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.brand-icons {
+    display: flex;
+    gap: 16px;
+}
